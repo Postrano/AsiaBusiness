@@ -45,31 +45,31 @@ const Footer = () => {
 
         {/* Right Section - Sitemap & Contact */}
         <div className="flex-1 p-4">
-          <h3 className="italic font-bold text-lg border-b pb-2 text-center md:text-left">
-            SITEMAP
-          </h3>
-          <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm mt-4 text-center md:text-left">
-            {[
-              "Home",
-              "Business Overview",
-              "Awards List",
-              "Seminar Information",
-              "Operating Sites",
-              "Message from the CEO",
-              "Company Overview",
-              "Q&A Blog",
-              "Careers",
-              "Contact Us",
-              "Information Security Policy",
-              "Privacy Policy",
-            ].map((item, index) => (
-              <li key={index}>
-                <a href="#" className="text-blue-400 hover:underline hover:text-blue-500">
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
+        <h3 className="italic font-bold text-lg border-b pb-2 text-center md:text-left">
+    SITEMAP
+  </h3>
+            <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm mt-4 text-center md:text-left">
+              {[
+                { name: "Home", href: "/" },
+                { name: "Business Overview", href: "/business-overview" },
+                { name: "Awards List", href: "/rewards" },
+                { name: "Seminar Information", href: "/seminars" },
+                { name: "Operating Sites", href: "/sites" },
+                { name: "Message from the CEO", link: "/Greeting" },
+                { name: "Company Overview", href: "/company-overview" },
+                { name: "Q&A Blog", href: "/blog" },
+                { name: "Careers", href: "/careers" },
+                { name: "Contact Us", href: "/contact" },
+                { name: "Information Security Policy", href: "/security-policy" },
+                { name: "Privacy Policy", href: "/privacy-policy" },
+              ].map((item, index) => (
+                <li key={index}>
+                  <a href={item.href} className="text-blue-400 hover:underline hover:text-blue-500">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
           <p className="mt-6 text-sm text-center md:text-left">
             If you have any questions, please contact us via our inquiry form.
@@ -78,7 +78,7 @@ const Footer = () => {
           </p>
 
           <div className="flex justify-center md:justify-start">
-            <a href="#" className="mt-4 inline-block bg-red-600 text-white py-2 px-6 text-sm font-bold rounded-lg">
+            <a href="/contact" className="mt-4 inline-block bg-red-600 text-white py-2 px-6 text-sm font-bold rounded-lg">
               Contact Us
             </a>
           </div>
