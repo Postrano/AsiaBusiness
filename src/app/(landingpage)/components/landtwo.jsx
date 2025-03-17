@@ -35,19 +35,20 @@ const BusinessServices = () => {
       {services.slice(0, Math.ceil(services.length / 2)).map((service, index) => (
         <div
           key={index}
-          className={`w-40 h-40 flex items-center justify-center text-white text-sm text-center p-4 ${service.color}`}
+           className={`w-23 h-25 sm:w-32 sm:h-32 md:w-40 md:h-40 flex items-center justify-center text-white text-xs sm:text-sm md:text-base text-center p-4 ${service.color}`}
           style={{ clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)" }}
         >
           {service.text}
         </div>
       ))}
-      <div className="w-full flex items-center justify-center text-black text-xl text-center p-4 font-bold">
-        お客様の利便性を追求し構築されたワンストップサービス
-      </div>
+      <div className="w-full flex items-center justify-center text-black text-lg sm:text-xl md:text-2xl text-center p-4 font-bold">
+  お客様の利便性を追求し構築されたワンストップサービス
+</div>
+
       {services.slice(Math.ceil(services.length / 2)).map((service, index) => (
         <div
           key={index + Math.ceil(services.length / 2)}
-          className={`w-40 h-40 flex items-center justify-center text-white text-sm text-center p-4 ${service.color}`}
+          className={`w-23 h-25 sm:w-32 sm:h-32 md:w-40 md:h-40 flex items-center justify-center text-white text-xs sm:text-sm md:text-base text-center p-4 ${service.color}`}
           style={{ clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)" }}
         >
           {service.text}
@@ -82,13 +83,13 @@ const LandTwo = () => {
 
       {/* GROUP Organization Section */}
       <div className="relative p-2">
-        <div className="absolute top-0 left-0 w-full bg-black text-white text-md font-bold p-3">
+        <div className="absolute top-0 left-0 w-full bg-black text-white text-md font-bold p-3 ">
           GROUP Organization
         </div>
         <img
-          src="/images/bs3.jpg"
+          src="/images/asianbusi.png"
           alt="Group Organization"
-          className="w-full h-auto mt-6"
+          className="w-full h-auto mt-10"
         />
       </div>
     </div>
