@@ -99,7 +99,7 @@ const Nav = () => {
             { icon: Monitor, label: "Sites", link: "/sites" },
             { icon: PenTool, label: "Blog", link: "/blog" },
             { icon: MessageSquare, label: "Greeting", link: "/Greeting" },
-            { icon: Globe, label: "About", link: "/About" },
+            { icon: Globe, label: "About", link: "/about" },
           ].map((item, index) => (
             <a
               key={index}
@@ -123,7 +123,7 @@ const Nav = () => {
           { icon: Monitor, label: "Sites", link: "/sites" },
           { icon: PenTool, label: "Blog", link: "/blog" },
           { icon: MessageSquare, label: "Greeting", link: "/Greeting" },
-          { icon: Globe, label: "About", link: "/About" },
+          { icon: Globe, label: "About", link: "/about" },
         ].map((item, index) => (
           <a
             key={index}
