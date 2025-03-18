@@ -75,6 +75,8 @@ const Page = () => {
           <button onClick={handleAsk} className="bg-blue-500 text-white p-2 rounded mt-2">Ask</button>
         </div>
         {/* <p>denmaerk</p> */}
+        {/* <p>denmaerk</p> */}
+        {/* <p>denmaerk</p> */}
         
         <div className="space-y-6">
           {posts.map((post) => (
