@@ -74,6 +74,7 @@ const Page = () => {
           <textarea placeholder="Your Question" className="border p-2 w-full mt-2" value={newQuestion.question} onChange={(e) => setNewQuestion({ ...newQuestion, question: e.target.value })} />
           <button onClick={handleAsk} className="bg-blue-500 text-white p-2 rounded mt-2">Ask</button>
         </div>
+        {/* <p>denmaerk</p> */}
         
         <div className="space-y-6">
           {posts.map((post) => (
