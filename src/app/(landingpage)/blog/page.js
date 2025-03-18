@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 import { ChevronRight } from "lucide-react";
 import { db } from "./../../../../script/firebaseConfig";
 import { collection, addDoc, getDocs, updateDoc, deleteDoc, doc } from "firebase/firestore";
@@ -184,4 +185,5 @@ const Page = () => {
   );
 };
 
-export default Page;
+// Use dynamic import to disable server-side rendering (SSR)
+export default dynamic(() => Promise.resolve(Page), { ssr: false });
